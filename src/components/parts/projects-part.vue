@@ -1,20 +1,24 @@
 <template>
   <div class="Pscaffold-grid">
     <div class="grid-item">
-      <img :src="img1" alt="" srcset="" />
-      <p>
-        this is just a text to see if it is works or not but it is looks like
-        doesnot work so i need to find a way to fix it.
-      </p>
-      <button>سورس کد</button>
+      <img :src="img1[0]" alt="" srcset="" />
+      <p>نرم افزار ساده برای فروشگاه کوچک کابینت.</p>
+      <button>
+        <a
+          href="https://github.com/Jafar-Rezazadeh/kabinet_froshy"
+          target="blank"
+          >سورس کد</a
+        >
+      </button>
     </div>
     <div class="grid-item">
-      <img :src="img1" alt="" srcset="" />
-      <p>
-        this is just a text to see if it is works or not but it is looks like
-        doesnot work so i need to find a way to fix it.
-      </p>
-      <button>سورس کد</button>
+      <img :src="img1[1]" alt="" srcset="" />
+      <p>صفحه فرود وب ساخته شده با فریم ورک (vue.js)</p>
+      <button>
+        <a href="https://github.com/Jafar-Rezazadeh/BuildSoftApp" target="black"
+          >سورس کد</a
+        >
+      </button>
     </div>
   </div>
 </template>
@@ -60,6 +64,9 @@ export default {
   opacity: 1;
 }
 .grid-item p {
+  font-family: Tahoma;
+  font-size: 20px;
+  direction: rtl;
   padding: 20px;
 }
 .grid-item img {
@@ -68,14 +75,23 @@ export default {
 }
 
 .grid-item button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
   background-color: rgb(75, 110, 224);
   color: white;
+  padding: 20px 0;
   border: none;
-  padding: 15px 30px;
   border-radius: 10px;
   font-size: 15px;
+}
+.grid-item button a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
 }
 .grid-item button:hover {
   animation: btnCchange 1s;

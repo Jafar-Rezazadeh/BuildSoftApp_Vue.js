@@ -22,7 +22,8 @@ import Footer from "./components/footer-part.vue";
 import image1 from "./assets/1.gif";
 import gmailico from "./assets/icons/gmail.png";
 import githubico from "./assets/icons/github.png";
-import projectimg from "./assets/3.png";
+import kabF from "./assets/1.png";
+import bsaImg from "./assets/2.png";
 
 export default {
   components: { SlideBar, Header, AboutUs, Skills, Projects, Footer },
@@ -32,7 +33,7 @@ export default {
       title: "Hello World!",
       image1: image1,
       aboutUsIcons: [gmailico, githubico],
-      pimg: projectimg,
+      pimg: [kabF, bsaImg],
     };
   },
 
